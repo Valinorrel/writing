@@ -4,7 +4,7 @@
   "description": "Personal Blog.",
   "main": "index.js",
   "scripts": {
-    "build": "vuepress dev docs",
+    "build": "vuepress build docs",
     "test": "vuepress dev docs"
   },
   "repository": {
