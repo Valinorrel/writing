@@ -1,0 +1,19 @@
+{
+  "name": "valinorrel",
+  "version": "1.0.0",
+  "description": "Personal Blog.",
+  "main": "index.js",
+  "scripts": {
+    "test": "vuepress dev docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valinorrel/Valinorrel.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Valinorrel/Valinorrel.github.io/issues"
+  },
+  "homepage": "https://github.com/Valinorrel/Valinorrel.github.io#readme"
+}
