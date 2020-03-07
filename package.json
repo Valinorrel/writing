@@ -4,6 +4,7 @@
   "description": "Personal Blog.",
   "main": "index.js",
   "scripts": {
+    "build": "vuepress dev docs",
     "test": "vuepress dev docs"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Valinorrel/Valinorrel.github.io/issues"
   },
-  "homepage": "https://github.com/Valinorrel/Valinorrel.github.io#readme"
+  "homepage": "https://github.com/Valinorrel/Valinorrel.github.io#readme",
+  "dependencies": {
+    "vuepress": "^1.3.1"
+  }
 }
