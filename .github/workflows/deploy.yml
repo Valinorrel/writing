@@ -31,5 +31,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.ACCESS_TOKEN }}
-          publish_dir: ./public
+          external_repository: Valinorrel/Valinorrel.github.io
+          publish_dir: /
           publish_branch: master
