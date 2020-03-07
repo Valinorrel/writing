@@ -26,12 +26,11 @@ jobs:
 
       - run: npm ci
       - run: npm run build
-      - run: cd ./docs/.vuepress/dist
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.ACCESS_TOKEN }}
           external_repository: Valinorrel/Valinorrel.github.io
+          publish_dir: ./docs/.vuepress/dist
           publish_branch: master
-          force_orphan: true
