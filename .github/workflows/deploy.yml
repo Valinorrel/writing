@@ -34,11 +34,4 @@ jobs:
           external_repository: Valinorrel/Valinorrel.github.io
           publish_dir: ./docs/.vuepress/dist
           publish_branch: master
-
-      - name: Deploy2
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: ${{ secrets.CODING_TOKEN }}
-          external_repository: git@e.coding.net:wyxwyxwyx/Valinorrel.git
-          publish_dir: ./docs/.vuepress/dist
-          publish_branch: master
+          
