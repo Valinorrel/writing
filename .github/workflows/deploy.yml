@@ -35,3 +35,11 @@ jobs:
           publish_dir: ./docs/.vuepress/dist
           publish_branch: master
           
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@master
+        env:
+          REPO: git@e.coding.net:wyxwyxwyx/Valinorrel.git
+          BRANCH: master
+          FOLDER: ./docs/.vuepress/dist
+          SSH_PRIVATE_KEY: ${{ secrets.CODING_TOKEN }}
+          KNOWN_HOSTS_FILE: known_hosts
