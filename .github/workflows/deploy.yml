@@ -26,6 +26,7 @@ jobs:
 
       - run: npm ci
       - run: npm run build
+      - run: ping e.coding.com
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -42,4 +43,4 @@ jobs:
           BRANCH: pages
           FOLDER: ./docs/.vuepress/dist
           SSH_PRIVATE_KEY: ${{ secrets.CODING_TOKEN }}
-          KNOWN_HOSTS_FILE: known_hosts
+          KNOWN_HOSTS_FILE: ./known_hosts
