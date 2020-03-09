@@ -26,7 +26,6 @@ jobs:
 
       - run: npm ci
       - run: npm run build
-      - run: ping e.coding.com
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -35,12 +34,3 @@ jobs:
           external_repository: Valinorrel/Valinorrel.github.io
           publish_dir: ./docs/.vuepress/dist
           publish_branch: master
-          
-      - name: Deploy
-        uses: s0/git-publish-subdir-action@master
-        env:
-          REPO: git@e.coding.net:wyxwyxwyx/Valinorrel.git
-          BRANCH: pages
-          FOLDER: ./docs/.vuepress/dist
-          SSH_PRIVATE_KEY: ${{ secrets.CODING_TOKEN }}
-          KNOWN_HOSTS_FILE: ./known_hosts
