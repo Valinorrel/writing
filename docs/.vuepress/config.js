@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'Hello VuePress',
-    description: 'Hello, my friend!',
+    title: 'Valinorrel',
+    description: 'Personal Blog',
     head: [
         ['link', {
             rel: 'icon',

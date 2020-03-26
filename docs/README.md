@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: /main.svg
-heroText: Hero 标题
-tagline: Hero 副标题
+heroText: Valinorrel
+tagline: Personal Blog
 actionText: 快速上手 →
 actionLink: /zh/guide/
 features:
